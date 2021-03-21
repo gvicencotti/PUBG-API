@@ -1,0 +1,11 @@
+<h1>PUBG Stats</h1>
+
+<%= form_with url: "/search", method: :post do |form| %>
+  
+  <%= form.label :user, "Insira o usuário:" %>
+  <%= form.text_field :user %>
+
+  <%= form.submit "Pesquisar" %>
+
+<% end %>
+

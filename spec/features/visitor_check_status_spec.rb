@@ -6,8 +6,8 @@ feature 'visitor check status' do
     visit root_path
     click_on 'Pesquisar'
 
-    expect(page).to have_content('assists')
-    expect(page).to have_content('kills')
-    expect(page).to have_content('losses')
+    expect(page).to have_content('Assists:')
+    expect(page).to have_content('Kills:')
+    expect(page).to have_content('Losses:')
   end
 end

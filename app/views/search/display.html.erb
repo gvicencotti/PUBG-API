@@ -1,4 +1,11 @@
 <h1>Player Stats</h1>
 
-<%= @response.body %><br>
-<%= @response.headers %>
+Assists:
+<%= @stats_total[0][:assists] %><br>
+Kills:
+<%= @stats_total[0][:kills] %><br>
+Losses:
+<%= @stats_total[0][:losses] %><br>
+
+K/D:
+<%= (@stats_total[0][:kills].to_f/@stats_total[0][:losses].to_f).round(2) %>
